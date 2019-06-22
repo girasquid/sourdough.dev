@@ -54,7 +54,6 @@ function Bio() {
                 width: `100%`,
                 marginBottom: `0`,
               }}>
-                Follow along as I build out <a href="https://bake.app">Bake.app</a>, an app designed for sourdough bakers.
                 {` `}
                 <a href="https://tinyletter.com/SourdoughDev">Join my Newsletter</a> for updates straight to your inbox.
                 {` `}
