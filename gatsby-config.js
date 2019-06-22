@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Behind the App: the building of Bake`,
+    title: `Behind the App`,
     author: `Thomas McGoey-Smith`,
-    description: `Join me as we build out Bake.app with React Native.`,
+    description: `Join me as I build out apps with React Native + Go.`,
     siteUrl: `https://sourdough.dev`,
     social: {
       twitter: `tamcgoey`,
@@ -105,7 +105,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Behind the App, the building of Bake.",
+            title: "Behind the App.",
           },
         ],
       },
