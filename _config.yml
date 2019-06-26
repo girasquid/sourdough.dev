@@ -41,6 +41,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-compose
 
 defaults:
   # _posts
@@ -53,6 +54,7 @@ defaults:
       comments: true
       share: true
       related: true
+      author_profile: true
 
 comments:
   provider: "utterances"
@@ -118,3 +120,12 @@ paginate_path: /page:num/
 timezone: America/Toronto
 
 permalink: /:title/
+
+jekyll_compose:
+  draft_default_front_matter:
+    description:
+    image:
+    category:
+    tags:
+  post_default_front_matter:
+    layout: single

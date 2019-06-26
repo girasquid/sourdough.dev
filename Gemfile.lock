@@ -58,6 +58,8 @@ GEM
       verbal_expressions (~> 0.1.5)
     jekyll-archives (2.2.1)
       jekyll (>= 3.6, < 5.0)
+    jekyll-compose (0.11.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-data (1.0.0)
       jekyll (~> 3.3)
     jekyll-feed (0.12.1)
@@ -132,6 +134,7 @@ DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-algolia
   jekyll-archives
+  jekyll-compose
   jekyll-feed
   jekyll-gist
   jekyll-include-cache
