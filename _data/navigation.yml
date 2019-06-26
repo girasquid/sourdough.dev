@@ -1,0 +1,7 @@
+main:
+  - title: "Articles"
+    url: /
+  - title: "Newsletter"
+    url: https://tinyletter.com/SourdoughDev
+  - title: "About"
+    url: /about/

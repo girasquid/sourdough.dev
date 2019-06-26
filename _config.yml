@@ -1,0 +1,120 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Sourdough Dev
+title_separator: "|"
+email: hey@thomas.codes
+description: >- # this means to ignore newlines until "baseurl:"
+  "👋 Hey there! Welcome to my personal blog: sourdough dev. Software engineering meets sourdough."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sourdough.dev" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: tamcgoey
+github_username:  tamcgoey
+repository: "tamcgoey/sourdough.dev"
+logo: "/assets/images/sourdough_dev.png"
+breadcrumbs: false
+search: true
+
+# Build settings
+markdown: kramdown
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-algolia
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-archives
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: false
+      comments: true
+      share: true
+      related: true
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "title"
+    repo: "tamcgoey/sourdough.dev"
+
+search_provider: algolia
+
+algolia:
+  application_id: "L29M2EWUM7"
+  index_name: "sourdough_dev"
+  search_only_api_key: "7893a1b709fd384d464c48bf2a5b2957"
+  powered_by: true
+
+social:
+  links:
+    - "https://twitter.com/tamcgoey"
+    - "https://instagram.com/tamcgoey"
+    - "https://www.linkedin.com/in/tamcgoey"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-112029728-3"
+
+author:
+  name: "Thomas McGoey-Smith"
+  avatar: "/assets/images/thomas.png"
+  bio: "Sourdough dev: software engineering meets sourdough."
+  location: "Ottawa, Canada"
+  links:
+    - label: "Blog"
+      icon: "fas fa-fw fa-link"
+      url: "https://sourdough.dev"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tamcgoey"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tamcgoey"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/tamcgoey"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tamcgoey"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tamcgoey"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/tamcgoey"
+
+# Pagination
+paginate: 20
+paginate_path: /page:num/
+
+timezone: America/Toronto
+
+permalink: /:title/
