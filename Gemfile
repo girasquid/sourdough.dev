@@ -14,6 +14,6 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jemoji"
   gem "jekyll-include-cache"
-  gem "jekyll-archives"
+  gem "jekyll-archives", "2.1.1"
   gem "jekyll-compose"
 end
